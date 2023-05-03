@@ -36,15 +36,19 @@ Check Header Items Links
 Check About Section
     Wait Until Element Is Visible    ${aboutSection}  
     Location Should Be    ${urlAbout} 
+    
 Check Experience Section
     Wait Until Element Is Visible    ${experienceSection}  
     Location Should Be    ${urlExperiences} 
+
 Check Projects Section
     Wait Until Element Is Visible    ${projectsSection}  
     Location Should Be    ${urlProjects} 
+
 Check Skill Section
     Wait Until Element Is Visible    ${skillsSection}  
     Location Should Be    ${urlSkills} 
+
 Check Reviews Section
     Wait Until Element Is Visible    ${reviewsSection}  
     Location Should Be    ${urlRecommendations} 
