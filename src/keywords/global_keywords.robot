@@ -6,7 +6,7 @@ Documentation    Contains all keywords used in the test suits.
 *** Keywords ***
 Open Website
     [Documentation]    Open the browser at the desired URL.
-    Open Browser       browser=${browser}    options=${browser_options}
+    Open Browser       browser=headlessChrome    options=${browser_options}
 
 Close Website
     [Documentation]    Close the browser after capturing a photo of the page.
