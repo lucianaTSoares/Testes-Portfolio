@@ -19,3 +19,8 @@ steps:
     echo Running tests...
     robot -d logs/ tests/
   displayName: 'Run Robot Framework tests'
+  
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: 'logs_$(date +%Y%m%d%H%M%S)' 
+    artifactName: 'RobotFrameworkLogs'
