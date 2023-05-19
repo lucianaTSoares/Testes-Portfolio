@@ -17,11 +17,13 @@ steps:
 
 - script: |
     echo Running tests...
-    robot -d logs/ tests/
+    timestamp=$(date +%Y%m%d%H%M%S)
+    mkdir logs_$timestamp
+    robot -d logs_$timestamp/ tests/
   displayName: 'Run Robot Framework tests'
   continueOnError: true
   
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: 'logs' 
+    pathtoPublish: 'logs_$(date +%Y%m%d%H%M%S)' 
     artifactName: 'RobotFrameworkLogs'
