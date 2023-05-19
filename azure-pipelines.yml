@@ -12,7 +12,7 @@ pool:
 steps:
 - script: |
     echo Installing dependencies...
-    pip install robotframework
+    pip install robotframework robotframework-seleniumlibrary
   displayName: 'Install dependencies'
 
 - script: |
