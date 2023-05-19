@@ -11,13 +11,13 @@ pool:
 
 steps:
 - script: |
-  echo Installing dependencies...
-  pip install -r requirements.txt
+    echo Installing dependencies...
+    pip install -r requirements.txt
   displayName: 'Install dependencies'
 
 - script: |
-  echo Running tests...
-  timestamp=$(date +%Y%m%d%H%M%S)
-  mkdir logs_$timestamp
-  robot -d logs_$timestamp/ tests/
+    echo Running tests...
+    timestamp=$(date +%Y%m%d%H%M%S)
+    mkdir logs_$timestamp
+    robot -d logs_$timestamp/ tests/
   displayName: 'Run Robot Framework tests'
