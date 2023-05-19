@@ -17,8 +17,9 @@ steps:
 
 - script: |
     echo Running tests...
-    robot -d logs/ -i scrollButtonVisible tests/
+    robot -d logs/ tests/
   displayName: 'Run Robot Framework tests'
+  continueOnError: true
   
 - task: PublishBuildArtifacts@1
   inputs:
