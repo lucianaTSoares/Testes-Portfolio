@@ -22,5 +22,5 @@ steps:
   
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: 'logs_$(date +%Y%m%d%H%M%S)' 
+    pathtoPublish: 'logs' 
     artifactName: 'RobotFrameworkLogs'
