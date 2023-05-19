@@ -17,5 +17,5 @@ steps:
 
 - script: |
     echo Running tests...
-    robot -d logs_$timestamp/ tests/
+    robot -d logs/ tests/
   displayName: 'Run Robot Framework tests'
